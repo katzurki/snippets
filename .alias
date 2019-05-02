@@ -1,0 +1,12 @@
+alias pip='pip3 '
+alias python='python3 '
+alias tcurl='curl --socks5-hostname localhost:9050 '
+alias nc=/snap/bin/nmap.ncat
+alias websocat=wscat
+HISTSIZE=5000
+HISTFILESIZE=10000
+shopt -s histappend
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+HISTIGNORE='ls:bg:fg:ps:history'
+shopt -s cmdhist
+set -o histexpand
